@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,30 +15,29 @@
             android:id="@+id/showsec"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="TextView" />
+            android:text="Hello, click on start to run the clock" />
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="175dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:gravity="center"
-            android:text="START"
-            android:onClick="startOperation"/>
+            android:onClick="startOperation"
+            android:text="START" />
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="STOP"
-            android:onClick="stopOperation"/>
+            android:onClick="stopOperation"
+            android:text="STOP" />
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="get sec"
-            android:onClick="getcount"/>
+            android:onClick="getcount"
+            android:text="get sec" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
